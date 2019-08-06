@@ -1,0 +1,31 @@
+File: c:/ddc/Java/Actor7A/HowTo.txt
+Date: Sat Sep 15 20:44:09 2018
+
+      How to create your own PDA agent(s)
+
+Create another directory, say ActorY
+Create in the directory above ActorY the script that compiles the
+sources in ActorY.
+Copy the files from ActorX into ActorY.
+Remove extraneous info from aaReadMe.txt and adjust the file name to:
+    File: c:/ddc/Java/ActorY/aaReadMe.txt
+Fix in all the java files the file name in the header and the package name.
+
+Adjust Try to create and start one or more actors.
+Comment out what will not be needed.
+
+Create in Actor required states using a design for states and their
+monitors. 
+Adjust in Actor the constructor.
+
+Create in Actor's constructor the required monitors that depend on the
+introduced states  (or put them after where the states are defined).
+
+Create in Actor the necessary alert generators.
+
+Create in Monitor the monitors defined in Actor and invoke the alert
+generators coded in Actor.
+
+Create in Dispatcher the classes referred to by the alert generators.
+
+Create in Job the classes referred to by the alert generators.

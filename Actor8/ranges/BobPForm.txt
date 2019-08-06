@@ -1,0 +1,298 @@
+Score yourself/ your acquaintance for each personality feature 
+with the index position on the scale:
+|---|---|---|---|---|---|---|---|---|---| 
+1  .9  .8  .7  .6  .5  .4  .3  .2  .1   0 
+Circle own gender or the gender of the acquaintance: 
+Bob  male
+
+|--X-|---|---|---|---|---|---|---|---|---|  0
+Academic-smart               No academics
+
+|---|---|---|---|---|---|---|--X-|---|---|  1
+Accurate                         Careless
+
+|---|---|-X-|---|---|---|---|---|---|---|  2
+Adventurous                       Prudent
+
+|---|---|-X--|---|---|---|---|---|---|---|  3
+Affluent                       Poor/debts
+
+|---|---|-X--|---|---|---|---|---|---|---|  4
+Agile                              Clumsy
+
+|---|---|---|---|---|---|---|-X--|---|---|  5
+Aggressive                 Non Aggressive
+
+|---|-X--|---|---|---|---|---|---|---|---|  6
+Appreciate Humor        No sense of humor
+
+|---|--X-|---|---|---|---|---|---|---|---|  7
+Art curious                Not interested
+
+|---|---|---|---|--X-|---|---|---|---|---|  8
+Artistic (all types)               No art
+
+|---|---|---|--X-|---|---|---|---|---|---|  9
+Balanced                       Unbalanced
+
+|---|---|---|--X-|---|---|---|---|---|---|  10
+Brave                             Fearful
+
+|---|---|---|--X-|---|---|---|---|---|---|  11
+Broad-minded                 Close-minded
+
+|---|---|---|--X-|---|---|---|---|---|---|  12
+Carefree                          Worried
+
+|---|---|---|---|---|---|-X--|---|---|---|  13
+Careful                          Careless
+
+|---|---|---|---|---|---|--X-|---|---|---|  14
+Caring                         Neglecting
+
+|---|---|--X-|---|---|---|---|---|---|---|  15
+Cheerful                           Gloomy
+
+|---|--X-|---|---|---|---|---|---|---|---|  16
+Clear minded                        Fuzzy
+
+|---|---|---|--X-|---|---|---|---|---|---|  17
+Considered                    Disregarded
+
+|---|---|--X-|---|---|---|---|---|---|---|  18
+Conventional                     Bohemian
+
+|---|---|---|--X-|---|---|---|---|---|---|  19
+Creative                         Ungifted
+
+|---|---|---|-X--|---|---|---|---|---|---|  20
+Critical                       Uncritical
+
+|---|---|---|--X-|---|---|---|---|---|---|  21
+Curious                       Indifferent
+
+|---|---|--X-|---|---|---|---|---|---|---|  22
+Decisive                       Indecisive
+
+|---|---|---|-X--|---|---|---|---|---|---|  23
+Demanding                     Undemanding
+
+|---|---|-X--|---|---|---|---|---|---|---|  24
+Direct                           Indirect
+
+|---|--X-|---|---|---|---|---|---|---|---|  25
+Drives OK                   Drives not OK
+
+|---|-X--|---|---|---|---|---|---|---|---|  26
+Educated                       Uneducated
+
+|---|---|---|---|--X-|---|---|---|---|---|  27
+Emancipated                Un-Emancipated
+
+|---|---|---|---|---|--X-|---|---|---|---|  28
+Emotional                     Unemotional
+
+|---|---|---|-X--|---|---|---|---|---|---|  29
+Emotionally stable                  Moody
+
+|---|---|---|---|--X-|---|---|---|---|---|  30
+Empathetic             Asperger/ Autistic
+
+|---|---|---|---|---|--X-|---|---|---|---|  31
+Expressive                   Inexpressive
+
+|---|---|--X-|---|---|---|---|---|---|---|  32
+Fair          Hypocritical/ double dipper
+
+|---|---|--X-|---|---|---|---|---|---|---|  33
+Flexible                       Inflexible
+
+|---|---|-X--|---|---|---|---|---|---|---|  34
+Friendly                       Unfriendly
+
+|---|---|---|---|--X-|---|---|---|---|---|  35
+Generous                          Miserly
+
+|---|---|---|---|--X-|---|---|---|---|---|  36
+Healthy habits           Unhealthy habits
+
+|---|---|-X--|---|---|---|---|---|---|---|  37
+Helpful                         Unhelpful
+
+|---|---|---|---|---|---|--X-|---|---|---|  38
+High strung                       Relaxed
+
+|---|---|--X-|---|---|---|---|---|---|---|  39
+Honest                   Lying/ dishonest
+
+|---|---|-X--|---|---|---|---|---|---|---|  40
+Humorous                         No-humor
+
+|---|-X--|---|---|---|---|---|---|---|---|  41
+Independent                     Dependent
+
+|---|--X-|---|---|---|---|---|---|---|---|  42
+Interested                         Boring
+
+|---|---|---|---|--X-|---|---|---|---|---|  43
+Introspective                Unthoughtful
+
+|---|---|---|--X-|---|---|---|---|---|---|  44
+Introvert                       Extrovert
+
+|---|---|---|--X-|---|---|---|---|---|---|  45
+Judgmental                       Tolerant
+
+|---|---|---|--X-|---|---|---|---|---|---|  46
+Laconic                       Long-winded
+
+|---|---|---|---|---|-X--|---|---|---|---|  47
+Leader                           Follower
+
+|---|---|---|---|---|---|---|--X-|---|---|  48
+Lean                           Rubenesque
+
+|---|---|---|---|---|---|--X-|---|---|---|  49
+Liberal                      Conservative
+
+|---|---|---|---|---|---|--X-|---|---|---|  50
+Low maintenance          High maintenance
+
+|---|---|-X--|---|---|---|---|---|---|---|  51
+Mature                              Green
+
+|---|---|---|---|-X--|---|---|---|---|---|  52
+Merry                           Sorrowful
+
+|---|---|---|---|---|---|--X-|---|---|---|  53
+Modest                              Showy
+
+|---|---|---|--X-|---|---|---|---|---|---|  54
+Multi lingual              Single lingual
+
+|---|---|-X--|---|---|---|---|---|---|---|  55
+Nice                                Nasty
+
+|---|---|---|---|---|---|-X--|---|---|---|  56
+No TV                     TV couch potato
+
+|---|---|---|---|-X-|---|---|---|---|---|  57
+Objective                      Subjective
+
+|---|---|---|---|---|---|-X--|---|---|---|  58
+Obligation aware             Rights aware
+
+|---|---|---|---|---|---|-X--|---|---|---|  59
+Observant                     Inattentive
+
+|---|---|---|---|---|--X-|---|---|---|---|  60
+Orderly                        Disorderly
+
+|---|--X-|---|---|---|---|---|---|---|---|  61
+Own income                          Leach
+
+|---|---|---|---|--X-|---|---|---|---|---|  62
+Patience                       Impatience
+
+|---|---|---|---|-X--|---|---|---|---|---|  63
+Perseverance                    Indolence
+
+|---|---|---|---|---|---|--X-|---|---|---|  64
+Pessimistic                    Optimistic
+
+|---|---|--X-|---|---|---|---|---|---|---|  65
+Pragmatic                      Idealistic
+
+|---|---|---|---|---|-X--|---|---|---|---|  66
+Punctual                            Tardy
+
+|---|---|---|---|---|-X--|---|---|---|---|  67
+Quiet                       Communicative
+
+|---|--X-|---|---|---|---|---|---|---|---|  68
+Rational                       Irrational
+
+|---|-X-|---|---|---|---|---|---|---|---|  69
+Realistic                        Fanciful
+
+|---|---|---|---|---|---|-X--|---|---|---|  70
+Reliable                       Unreliable
+
+|---|--X-|---|---|---|---|---|---|---|---|  71
+Responsible                 Irresponsible
+
+|---|---|---|---|---|---|-X--|---|---|---|  72
+Sensitive                     Insensitive
+
+|---|--X-|---|---|---|---|---|---|---|---|  73
+Self-confident                   Insecure
+
+|---|-X--|---|---|---|---|---|---|---|---|  74
+Self-reliant                  Subservient
+
+|---|---|--X-|---|---|---|---|---|---|---|  75
+Serious                          Flippant
+
+|---|-X--|---|---|---|---|---|---|---|---|  76
+Sharp                                Slow
+
+|---|---|---|---|---|-X--|---|---|---|---|  77
+Skeptical                       Believing
+
+|---|---|-X--|---|---|---|---|---|---|---|  78
+Social                            Asocial
+
+|---|---|-X--|---|---|---|---|---|---|---|  79
+Solid                             Tenuous
+
+|---|---|-X--|---|---|---|---|---|---|---|  80
+Sophisticated               Inexperienced
+
+|---|---|---|---|---|---|--X-|---|---|---|  81
+Spontaneous                       Planned
+
+|---|---|---|---|---|-X--|---|---|---|---|  82
+Sportive                     Non-sportive
+
+|---|---|---|---|-X--|---|---|---|---|---|  83
+Street-smart                Inexperienced
+
+|---|---|---|---|---|--X-|---|---|---|---|  84
+Strict                            Lenient
+
+|---|---|---|---|---|--X-|---|---|---|---|  85
+Strong                              Loose
+
+|---|---|---|---|--X-|---|---|---|---|---|  86
+Tactful                          Tactless
+
+|---|---|---|---|-X--|---|---|---|---|---|  87
+Talkative                       Listening
+
+|---|---|---|---|--X-|---|---|---|---|---|  88
+Team player                  Antagonistic
+
+|---|---|--X-|---|---|---|---|---|---|---|  89
+Thinking                          Feeling
+
+|---|---|---|---|--X-|---|---|---|---|---|  90
+Thoughtful                   Unthoughtful
+
+|---|---|---|---|---|-X--|---|---|---|---|  91
+Thrifty                       Spendthrift
+
+|---|---|--X-|---|---|---|---|---|---|---|  92
+Trustful                       Untrusting
+
+|---|---|-X--|---|---|---|---|---|---|---|  93
+Trustworthy                 Untrustworthy
+
+|---|---|---|---|---|-X--|---|---|---|---|  94
+Verbose                          Succinct
+
+|---|---|-X--|---|---|---|---|---|---|---|  95
+Well-mannered                  Unmannerly
+
+|---|---|--X-|---|---|---|---|---|---|---|  96
+Well-bred                         Ignoble
+

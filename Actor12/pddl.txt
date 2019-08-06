@@ -1,0 +1,199 @@
+// c:/ddc/Java/Actor12/pddl.txt
+// Thu Jun 20 18:25:42 2019
+// (C) OntoOO/ Dennis de Champeaux
+
+From:
+https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language
+
+Domain decription::
+
+(define (domain gripper-strips)
+  (:predicates (room ?r) (ball ?b) (gripper ?g) (at-robby ?r)
+               (at ?b ?r) (free ?g) (carry ?o ?g))
+  (:action move
+   :parameters (?from ?to)
+   :precondition (and (room ?from)
+                      (room ?to)
+                      (at-robby ?from))
+   :effect (and (at-robby ?to)
+                (not (at-robby ?from))))
+  (:action pick
+   :parameters (?obj ?room ?gripper)
+   :precondition (and (ball ?obj)
+                      (room ?room)
+                      (gripper ?gripper)
+                      (at ?obj ?room)
+                      (at-robby ?room)
+                      (free ?gripper))
+   :effect (and (carry ?obj ?gripper)
+                (not (at ?obj ?room))
+                (not (free ?gripper))))
+  (:action drop
+   :parameters (?obj ?room ?gripper)
+   :precondition (and (ball ?obj)
+                      (room ?room)
+                      (gripper ?gripper)
+                      (carry ?obj ?gripper)
+                      (at-robby ?room))
+   :effect (and (at ?obj ?room)
+                (free ?gripper)
+                (not (carry ?obj ?gripper)))))
+---
+And this is the problem definition that instantiates the 
+previous domain definition with a concrete environment with 
+two rooms and two balls.
+
+(define (problem strips-gripper2)
+    (:domain gripper-strips)
+    (:objects rooma roomb ball1 ball2 left right)
+    (:init (room rooma)
+           (room roomb)
+           (ball ball1)
+           (ball ball2)
+           (gripper left)
+           (gripper right)
+           (at-robby rooma)
+           (free left)
+           (free right)
+           (at ball1 rooma)
+           (at ball2 rooma))
+    (:goal (at ball1 roomb)))
+
+=================================
+solution:
+
+-> pick(ball1 rooma left)
+-> move(rooma roomb)
+-> drop(ball1 roomb left)
+
+Solution elaboration
+
+Pre:
+(and (ball ball1)
+     (room rooma)
+     (gripper left)
+     (at ball1 rooma)
+     (at-robby rooma)
+     (free left))
+OK
+
+-> pick(ball1 rooma left)
+Post:
+(and (carry ball1 left)
+     (not (at ball1 rooma))
+     (not (free left))))
+
+
+Pre:
+(and (room rooma)
+     (room roomb) 
+     (at-robby rooma))
+OK
+
+-> move(rooma roomb)
+Post:
+(and (at-robby roomb)
+     (not (at-robby rooma))))
+
+Pre:
+(and (ball ball1)
+     (room roomb)
+     (gripper left)
+     (carry ball1 left)
+     (at-robby roomb))
+OK
+
+-> drop(ball1 roomb left)
+Post: 
+(and (at ball1 roomb) === goal
+     (free left)
+     (not (carry ball1 left)))
+
+
+===================================================
+===================================================
+Eliminating some type predicates:
+
+(define (domain gripper-strips)
+  (:predicates (room ?r) (ball ?b) (gripper ?g) (at-robby ?r)
+               (at ?b ?r) (free ?g) (carry ?o ?g))
+  (:action move
+   :parameters (?from ?to)
+   :precondition (and (room ?from) (room ?to)
+                      (at-robby ?from))
+   :effect (and (at-robby ?to)
+                (not (at-robby ?from))))
+  (:action pick
+   :parameters (?obj ?room ?gripper)
+   :precondition (and (at ?obj ?room)
+                      (at-robby ?room)
+                      (free ?gripper))
+   :effect (and (carry ?obj ?gripper)
+                (not (at ?obj ?room))
+                (not (free ?gripper))))
+  (:action drop
+   :parameters (?obj ?room ?gripper)
+   :precondition (and (carry ?obj ?gripper)
+                      (at-robby ?room))
+   :effect (and (at ?obj ?room)
+                (free ?gripper)
+                (not (carry ?obj ?gripper)))))
+-----
+
+(define (problem strips-gripper2)
+    (:domain gripper-strips)
+    (:objects rooma roomb ball1 ball2 left right)
+    (:init (and 
+            (room rooma) (room roomb)
+            (ball ball1) (ball ball2) 
+            (gripper left) (gripper right) 
+            (at-robby rooma)
+            (free left)
+            (free right)
+            (at ball1 rooma)
+            (at ball2 rooma))
+    (:goal (at ball1 roomb)))
+
+===================================================
+Rewriting to non-lisp and distinguish between delete and add effects:
+
+(define (domain gripper-strips)
+  (:predicates at-robby(?r)
+               at(?b ?r) free(?g) carry(?o ?g) )
+  (:action move
+   :parameters (?from ?to)
+   :precondition (and at-robby(?from) room(?from) room(?to))
+   :effect-add at-robby(?to)
+   :effect-delete at-robby(?from)  )
+  (:action pick
+   :parameters (?obj ?room ?gripper)
+   :precondition (and at(?obj ?room)
+                      at-robby(?room)
+                      free(?gripper))
+   :effect-add carry(?obj ?gripper)
+   :effect-delete at(?obj ?room)
+                  free(?gripper)  )
+  (:action drop
+   :parameters (?obj ?room ?gripper)
+   :precondition (and carry(?obj ?gripper)
+                      at-robby(?room))
+   :effect-add (and at(?obj ?room)
+                    free(?gripper) )
+   :effect-delete carry(?obj ?gripper) ) )
+-----
+
+(define (problem strips-gripper2)
+    (:domain gripper-strips)
+    (:objects rooma roomb ball1 ball2 left right)
+    (:init 
+           (and at-robby(rooma)
+                room(rooma) room(roomb)
+                ball(ball1) ball(ball2) 
+                gripper(left) gripper(right) 
+                free(left) free(right)
+                at(ball1 rooma)
+                at(ball2 rooma)) ) 
+    (:goal at(ball1 roomb) ) )
+
+
+============================================

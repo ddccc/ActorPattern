@@ -1,0 +1,66 @@
+c:/ddc/Java/Actor12/PddlSudoku.txt
+Wed Jul 03 18:57:02 2019
+
+PDDL encoding for the Sudoku domain
+
+Replacing in a Sudoku puzzle the numbers 1-9 and the blank gives 
+the values:
+   {v0, v1, ... v9}
+They are mutually different; at the meta level:
+vx != vy -> NotEqual(vx, vy) & NotEqual(vy, vx)
+
+There are 81 tiles:
+   {s00, s01, ... s88}
+They are also mutually different: at the meta level:
+sx != sy -> NotEqual(sx, sy) & NotEqual(sy, sx)
+We could use a type indicator like Tile(s00), Tile(s01) ... but we
+   don't have to.  A typed PC would be useful, of course.
+
+Tiles have values, for example:
+   TileValue(s00, v0) & TileValue(s01, v7) & ... 
+While true, we do not need:
+(s)(E1 v) TileValue(s, v)
+because the initial situation has only one value v for a tile s and
+the actions will preserve that feature.
+
+Constraints::
+There are nine rows, nine columns and nine 3x3 subarrays:
+For the row R0:
+   R0(s00) & R0(s01) & ..., R0(s08)
+Similar for R1 ... R8.
+Similar for the columns and the subarrays.
+
+Schema for R0: 
+ (sx)(sy) NotEqual(sx, sy) -> {
+   (vx)(vy) { R0(sx) & R0(sy) & TileValue(sx, vx) & TileValue(sy, vy) &
+              NotEqual(vx, v0) & NotEqual(vy, v0) -> NotEqual(vx, vy) }
+Similar for R1 ... R8.
+Similar for the columns C0, ..., C8.
+Similar for the subarrays S00, ..., S33.
+
+There are potentially 81*9 actions:
+
+Schema for vx: v1, v2, ..., v9 and sx: s00, ... s88::
+action assign(sx, vx)
+Let: Rx is the row that sx belongs to 
+     Cx is the column that sx belongs to
+     Sx is the subarray that sx belongs to
+precondition: TileValue(sx, vx) & NotEqual(vx, v0)
+      and the Rx row constraint, the Cx constraint and the Sx
+      subarray constraint hold with TileValue(sx, vx) instead of
+      TileValue(sx, v0) 
+deletes: TileValue(sx, v0)
+adds:    TileValue(sx, vx)
+
+A goal specification using the schema:  (sx) !TileValue(sx, v0)
+
+This PDDL encoding has clearly a (too) high branching ratio.  Not
+using PDDL in our PDA application ran into the same issue.  The
+solution in the application was obtaining a most constraint unassigned
+tile and applying substitutions only on that particular tile.
+
+PDDL's reason of being is replacing coding (as done for our Sudoku
+black box solvers) with declarative specifications/ constraints.  This
+example suggests that compilation-like transformations (and hints?)
+are required to make the PDDL approach effective - for this example.
+

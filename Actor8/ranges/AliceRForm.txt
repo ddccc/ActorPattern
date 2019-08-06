@@ -1,0 +1,297 @@
+Score for your desired partner for each personality feature with the
+index position on the scale and the importance of this feature.
+|---|---|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]: 
+1  .9  .8  .7  .6  .5  .4  .3  .2  .1   0 
+Circle own gender: female:Alice
+
+|---|--x-|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Academic-smart               No academics	
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Accurate                         Careless
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Adventurous                       Prudent
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Affluent                       Poor/debts
+
+|---|---|---|---|---|x---|---|---|---|---| importance [1.0 - 0.0]:  5
+Agile                              Clumsy
+
+|---|---|---|---|---|---|---|---|--x-|---| importance [1.0 - 0.0]:  9
+Aggressive                 Non Aggressive
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Appreciate Humor        No sense of humor
+
+|---|---|-x--|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Art curious                Not interested
+
+|---|---|---|---|---|-x--|---|---|---|---| importance [1.0 - 0.0]:  5
+Artistic (all types)               No art
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Balanced                       Unbalanced
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Brave                             Fearful
+
+|---x|---|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Broad-minded                 Close-minded
+
+|---|---|---|--x-|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Carefree                          Worried
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Careful                          Careless
+
+|---|---x|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Caring                         Neglecting
+
+|---|---|-x--|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Cheerful                           Gloomy
+
+|---|---|---|---|x---|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Clear minded                        Fuzzy
+
+|---|---|-x--|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Considered                    Disregarded
+
+|---|---|---|---|-x--|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Conventional                     Bohemian
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Creative                         Ungifted
+
+|---|---|---|x---|---|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Critical                       Uncritical
+
+|---|---|x---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Curious                       Indifferent
+
+|---|-x--|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Decisive                       Indecisive
+
+|---|---|x---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Demanding                     Undemanding
+
+|---|---|---|x---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Direct                           Indirect
+
+|---|---|---|---|x---|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Drives OK                   Drives not OK
+
+|---|--x-|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Educated                       Uneducated
+
+|--x-|---|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Emancipated                Un-Emancipated
+
+|---|---|---|x---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Emotional                     Unemotional
+
+|---|---|x---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Emotionally stable                  Moody
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Empathetic             Asperger/ Autistic
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Expressive                   Inexpressive
+
+|---|--x-|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  9
+Fair          Hypocritical/ double dipper
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Flexible                       Inflexible
+
+|---|---|x---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Friendly                       Unfriendly
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Generous                          Miserly
+
+|---|-x--|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Healthy habits           Unhealthy habits
+
+|---|---|---|--x-|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Helpful                         Unhelpful
+
+|---|---|---|---|---|---|-x--|---|---|---| importance [1.0 - 0.0]:  5
+High strung                       Relaxed
+
+|---|-x--|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Honest                   Lying/ dishonest
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Humorous                         No-humor
+
+|---|-x--|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Independent                     Dependent
+
+|---|---|-x--|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Interested                         Boring
+
+|---|--x-|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Introspective                Unthoughtful
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Introvert                       Extrovert
+
+|---|---|---|---|---|---|---|---|-x--|---| importance [1.0 - 0.0]:  5
+Judgmental                       Tolerant
+
+|---|---|---|---|---|x---|---|---|---|---| importance [1.0 - 0.0]:  5
+Laconic                       Long-winded
+
+|---|---|---|---|-x--|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Leader                           Follower
+
+|---|---|---|---|-x--|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Lean                           Rubenesque
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Liberal                      Conservative
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Low maintenance          High maintenance
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Mature                              Green
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Merry                           Sorrowful
+
+|---|---|-x--|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Modest                              Showy
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  2
+Multi lingual              Single lingual
+
+|---|--x-|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Nice                                Nasty
+
+|---|---|---|---|---x|---|---|---|---|---| importance [1.0 - 0.0]:  9
+No TV                     TV couch potato
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Objective                      Subjective
+
+|---|---|---|---|---|-x--|---|---|---|---| importance [1.0 - 0.0]:  5
+Obligation aware             Rights aware
+
+|---|---|---|x---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Observant                     Inattentive
+
+|---|---|---|---|---x|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Orderly                        Disorderly
+
+|---|-x--|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Own income                          Leach
+
+|---|---|-x--|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  2
+Patience                       Impatience
+
+|---|---|---|--x-|---|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Perseverance                    Indolence
+
+|---|---|---|---|-x--|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Pessimistic                    Optimistic
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Pragmatic                      Idealistic
+
+|---|---|---|---|-x--|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Punctual                            Tardy
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Quiet                       Communicative
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Rational                       Irrational
+
+|---|---|---|---|-x--|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Realistic                        Fanciful
+
+|---|---|-x--|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Reliable                       Unreliable
+
+|---|-x--|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Responsible                 Irresponsible
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Sensitive                     Insensitive
+
+|---|---|---|x---|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Self-confident                   Insecure
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Self-reliant                  Subservient
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Serious                          Flippant
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Sharp                                Slow
+
+|---|---|---|---|---|x---|---|---|---|---| importance [1.0 - 0.0]:  2
+Skeptical                       Believing
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Social                            Asocial
+
+|---|---|---|---|-x--|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Solid                             Tenuous
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Sophisticated               Inexperienced
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Spontaneous                       Planned
+
+|---|---|-x--|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Sportive                     Non-sportive
+
+|---|---|---|x---|---|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Street-smart                Inexperienced
+
+|---|---|---|---|x---|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Strict                            Lenient
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Strong                              Loose
+
+|---|---|---|--x-|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Tactful                          Tactless
+
+|---|---|---|---|--x-|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Talkative                       Listening
+
+|---|---|---|---|---|x---|---|---|---|---| importance [1.0 - 0.0]:  4
+Team player                  Antagonistic
+
+|---|---|---|---|---x|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Thinking                          Feeling
+
+|---|---|---|-x--|---|---|---|---|---|---| importance [1.0 - 0.0]:  3
+Thoughtful                   Unthoughtful
+
+|---|---|---|x---|---|---|---|---|---|---| importance [1.0 - 0.0]:  4
+Thrifty                       Spendthrift
+
+|---|-x--|---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  8
+Trustful                       Untrusting
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Trustworthy                 Untrustworthy
+
+|---|---|---|---|---x|---|---|---|---|---| importance [1.0 - 0.0]:  5
+Verbose                          Succinct
+
+|---|---|--x-|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  7
+Well-mannered                  Unmannerly
+
+|---|---|x---|---|---|---|---|---|---|---| importance [1.0 - 0.0]:  6
+Well-bred                         Ignoble
+
