@@ -1,11 +1,11 @@
-// File: c:/ddc/Java/ActorX/ActorBase.java
+// File: c:/ddc/Java/Actor13/ActorBase.java
 // (C) OntoOO/ Dennis de Champeaux
-// Date: Sat Sep 15 20:53:38 2018
+// Date: Sun Sep 08 16:32:24 2019
 
-package actorX;
+package actor13;
 
 import java.util.*;
-import fol.*; // 1st order logic theorem prover
+import fol.*; // 1st order logic theorem prover/ not used here
 
 // The classes Actor and ActorMeta are subclasses, which gets customized 
 public abstract class ActorBase implements Runnable {
