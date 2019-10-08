@@ -92,8 +92,10 @@ class MonitorFetchChar extends Monitor {
 	    State procSentenceS = actor.getProcSentenceS();
 	    int lng = bb.getWordCnt(); // lng is the # words in the sentence
 	    System.out.println("||||| MonitorFetchChar:    bb.getWordCnt() " + lng);
-	    procSentenceS.setIntValue(lng); 
 	    State finishS = actor.getFinishS();
+	    synchronized(procSentenceS) { 
+		procSentenceS.setIntValue(lng);
+	    }
 	    finishS.wakeUp();
 	    // just return
 	    return;
@@ -184,12 +186,12 @@ class MonitorSentence extends Monitor {
 	// generate the output with the word classifications
 	check0();
 	Actor actor = (Actor) actorMonitored;
-	State procSentenceS = actor.getProcSentenceS();
+	// State procSentenceS = actor.getProcSentenceS();
 
 	BlackBoard bb = actor.getBlackBoard();
 	Vector<Word> words = bb.getWords();
 	int lng = words.size();
-	// System.out.println("MonitorSentence lng " + lng);
+	System.out.println("||||| MonitorSentence lng " + lng);
 	
 	// output will be stored here in the blackboard
 	StringBuffer output = bb.getOutput1(); 
@@ -217,10 +219,14 @@ class MonitorClassifiers extends Monitor {
     public void check() {
 	check0();
 	Actor actor = (Actor) actorMonitored;
+	State procSentenceS = actor.getProcSentenceS();
 	State actorWS = actor.getActorWS();
 	int lng = actorWS.getIntValue();
-	state.setIntValue(lng);
-	System.out.println("||||| MonitorClassifiers trigger finishS");
+	synchronized(procSentenceS) { 
+	    // procSentenceS.setIntValue(lng);
+	    state.setIntValue(lng);
+	}
+	System.out.println("||||| MonitorClassifiers lng " + lng);
 	state.wakeUp(); // trigger monitorSentence if all actorw's are done
     } // end check
 } // end MonitorClassifiers
@@ -234,11 +240,20 @@ class MonitorFinish extends Monitor {
 	// push out the output sentence when # words equals finished # actorw's
 	check0();
 	Actor actor = (Actor) actorMonitored;
-	int lng = state.getIntValue();
-	if ( lng <= 0 ) return; // when not yet set by monitorFetchChar
-	State finishS = actor.getFinishS();
-	int lng2 = finishS.getIntValue();
-	if ( lng == lng2 ) state.wakeUp(); // when done
+	int lng, lng2;
+	boolean finished = false;
+	synchronized(state) {
+		lng = state.getIntValue();
+		System.out.println("||||| MonitorFinish lng " + lng);
+		if ( lng <= 0 ) return; // when not yet set by monitorFetchChar
+		State finishS = actor.getFinishS();
+		lng2 = finishS.getIntValue();
+		if ( lng == lng2 ) {
+		    finished = true;
+		    state.setIntValue(0);
+		}
+	    }
+	if ( finished ) state.wakeUp(); // when done
     } // end check
 } // end MonitorFinish
 
